@@ -13,7 +13,8 @@
         <h1>Welcome, {{user.username}} You Successfully Logged In</h1>
         <h1><p><a href="{% url 'logout' %}"> Logout </a></p></h1>
     {% else %}
-        <h1>Please login here <p><a href="{% url 'signup' %}"> Login Now!</a></p></h1>
+        <h1>Please login here <p><a href="{% url 'login' %}"> Login Now!</a></p></h1>
+        <h1><p><a href="{% url 'signup' %}"> Signup</a></p></h1>
     {% endif %}
 </body>
 </html>
